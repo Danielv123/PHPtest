@@ -5,8 +5,11 @@
 </head>
 
 <body>
+
+<h1>What is PHP?</h1>
+
 <?php
-echo "PHP IS AWESOMEEEEE!";
+echo "<p>PHP IS AWESOMEEEEE!</p>";
 ?>
 
 </body>
