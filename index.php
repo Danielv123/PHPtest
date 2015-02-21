@@ -24,7 +24,7 @@ $password = "";
 echo "$var2";
 
 echo "<p>That string was $var21 characters long and included nearly $var22 words. 
-If you reverse it you would get $var2R. emosewa, right?</p>";
+If you reverse it you would get $var2R. emosewA, right?</p>";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password);
