@@ -19,13 +19,37 @@ $password = "";
 
 <h1>What is PHP?</h1>
 
+<form method="post" action="<?php echo htmlspecialchars($_server["PHP_SELF"]);?>">
+
+<input type="text" name="php1">
+<input type="submit" name="submit" value="submit">
+</form>
+
 <?php
+$php1 = $data = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	$php1 = test_input($_POST["php1"]);
+}
+
+function test_input($data) {
+	$data = trim($data);
+	$data = stripslashes($data);
+	$data = htmlspecialchars($data);
+	return $data;
+}
+
 
 echo "$var2";
 
 echo "<p>That string was $var21 characters long and included nearly $var22 words. 
 If you reverse it you would get $var2R. emosewA, right?</p>";
 
+
+
+
+
+//database stuff
 // Create connection
 $conn = new mysqli($servername, $username, $password);
 
