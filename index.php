@@ -34,4 +34,17 @@ echo "$var2";
 echo "<p>That string was $var21 characters long and included nearly $var22 words. 
 If you reverse it you would get $var2R. emosewA, right?</p>";
 ?>
+
+<h1><br></h1>
+
+<p>File uploads!</p>
+<form action="upload.php" method="post" enctype="multipart/form-data">
+    Select image to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload Image" name="submit">
+</form>
+
+
+
+
 </body>
